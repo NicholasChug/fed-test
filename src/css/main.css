@@ -59,6 +59,25 @@
 }
 
 /* Begin styling the report items here! */
-.reports {
+/* My custom code begins below! */
 
+/* I chose to go with css grid for the report layout as it is widely supported across the web, and greatly helps with responsiveness */
+.reports {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 30px;
+}
+
+/* Media responsiveness section below! */
+@media (max-width: 768px) {
+  .reports {
+    grid-template-columns: auto auto;
+  }
+}
+
+/* Added in additional media query for mobile viewports, moving to single column per row */
+@media (max-width: 570px) {
+  .reports {
+    grid-template-columns: auto;
+  }
 }

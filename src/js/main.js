@@ -5,6 +5,7 @@ var reportsWidget = {
             '{{#.}}' +
                 '<article class="reports_item">' +
                     '<a href="{{cover}}" target="_blank">' +
+                        // Added in additional concatenation on line 9 to fix script error
                         '<img class="reports_cover" src="{{cover}}" alt="{{title}} Cover"/>' +
                     '</a>' +
                     '<footer class="reports_docs">' +
